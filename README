@@ -10,7 +10,7 @@ Simple way to control and modify the source code of disksim.
     * 註: 安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory
     
 ## 編譯
-    * cd [src](src)
+    * cd [src](/src)
     * make clean
     * make
     
@@ -23,7 +23,7 @@ Simple way to control and modify the source code of disksim.
     * hdd_output
     
 ## 主要修改的地方
-    * cd [lmssim.c](src\lmssim.c)
+    * cd [lmssim.c](/src/lmssim.c)
     
 
 
