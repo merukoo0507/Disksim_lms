@@ -2,30 +2,31 @@
 Simple way to control and modify the source code of disksim.
     
 ## Reference
-    * http://cighao.com/2016/03/23/disksim-with-ssdmodel-source-analysis-012-write-requests/
-    * 孟軒's program
+* http://cighao.com/2016/03/23/disksim-with-ssdmodel-source-analysis-012-write-requests/
+* 孟軒's program
     
 ## Environment
-    * Ubuntu 14.04 x86 (!!)
-    * 註: 安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory，
-        嘗試输入sudo apt-get install gcc-multilib
+* Ubuntu 14.04 x86 (!!)
+* 註:
+    安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory，
+    嘗試输入sudo apt-get install gcc-multilib
     
 ## 編譯
-    * cd src
-    * make clean
-    * make
+* cd src
+* make clean
+* make
     
 ## 執行
-    * sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/ssdmodel/valid/maxtor146g/maxtor146g.parv' hdd_output
-    * 參數含意
-        * ./lmssim 執行檔
-        * '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' //SSD參數
-        * ssd_output  隨意取
-        * '/home/merukoo/Disksim_lms/ssdmodel/valid/maxtor146g/maxtor146g.parv' //HDD參數
-        * hdd_output  隨意取
+* sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/ssdmodel/valid/maxtor146g/maxtor146g.parv' hdd_output
+* 參數含意
+    * ./lmssim 執行檔
+    * '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' //SSD參數
+    * ssd_output  隨意取
+    * '/home/merukoo/Disksim_lms/ssdmodel/valid/maxtor146g/maxtor146g.parv' //HDD參數
+    * hdd_output  隨意取
     
 ## 主要修改的地方
-    * [lmssim.c] (src/lmssim.c)
+* [lmssim.c] (src/lmssim.c)
     
 
 
