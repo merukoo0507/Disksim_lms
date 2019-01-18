@@ -26,8 +26,8 @@ Simple way to control and modify the source code of disksim.
     * hdd_output  隨意取
     
 ## 主要修改的地方
-* [lmssim.c] (src/lmssim.c)
-    
+* [lmssim.c](src/lmssim.c)
+        
 
 
 # Disksim
