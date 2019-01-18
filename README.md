@@ -27,6 +27,11 @@ Simple way to control and modify the source code of disksim.
     
 ## 主要修改的地方
 * [lmssim.c](src/lmssim.c)
+        * lmssim.c:475 看帶入參數對不對
+        * lmssim.c:515 輸入disksim資料 
+            ex. 抵達時間、裝置編號(我忽略)、blkno...
+        * lmssim.c:537 Send_To_HDD
+        * lmssim.c:550 Send_To_SSD
         
 
 
