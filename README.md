@@ -7,7 +7,8 @@ Simple way to control and modify the source code of disksim.
     
 ## Environment
     * Ubuntu 14.04 x86 (!!)
-    * 註: 安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory
+    * 註: 安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory，
+        嘗試输入sudo apt-get install gcc-multilib
     
 ## 編譯
     * cd src
@@ -24,7 +25,7 @@ Simple way to control and modify the source code of disksim.
         * hdd_output  隨意取
     
 ## 主要修改的地方
-    * cd [lmssim.c](src/lmssim.c)
+    * [lmssim.c] (src/lmssim.c)
     
 
 
