@@ -17,12 +17,12 @@ Simple way to control and modify the source code of disksim.
 * make
     
 ## 執行
-* sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/ssdmodel/valid/maxtor146g/maxtor146g.parv' hdd_output
+* sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_output
 * 參數含意
     * ./lmssim 執行檔
     * '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' //SSD參數
     * ssd_output  隨意取
-    * '/home/merukoo/Disksim_lms/ssdmodel/valid/maxtor146g/maxtor146g.parv' //HDD參數
+    * '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' //HDD參數
     * hdd_output  隨意取
     
 ## 主要修改的地方
