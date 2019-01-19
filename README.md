@@ -13,14 +13,14 @@ Simple way to control and modify the source code of disksim.
     
 ## 編譯
 * 到/libparam 開啟檔案權限
-        sudo chmod -f 777 *
+    sudo chmod -f 777 *
 * 到/libddbg、/libparam、/diskmodel
-        make clean
-        make
+    make clean
+    make
 * 到/src編譯
-        cd src
-        make clean
-        make
+    cd src
+    make clean
+    make
     
 ## 執行
 * `sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_output`
