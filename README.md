@@ -17,21 +17,21 @@ Simple way to control and modify the source code of disksim.
 * make
     
 ## 執行
-* sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_output
+* ˋsudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_outputˋ
 * 參數含意
-    * SSD參數: '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' 
-    * HDD參數:　'/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' 
-    * 隨意取: ssd_output, hdd_output
+    * SSD參數: ˋ/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parvˋ 
+    * HDD參數:　ˋ/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parvˋ 
+    * 隨意取: ˋssd_outputˋ, ˋhdd_outputˋ
     
 ## 主要修改的地方
 * [lmssim.c](src/lmssim.c)
 程式碼有註解，主要是以下部分
         
-        lmssim.c:475 看帶入參數對不對
-        lmssim.c:515 輸入disksim資料 
-           //ex. 抵達時間、裝置編號(我忽略)、blkno...
-        lmssim.c:537 Send_To_HDD
-        lmssim.c:550 Send_To_SSD
+* lmssim.c:475 看帶入參數對不對
+* lmssim.c:515 輸入disksim資料 
+    //ex. 抵達時間、裝置編號(我忽略)、blkno...
+* lmssim.c:537 Send_To_HDD
+* lmssim.c:550 Send_To_SSD
         
 
 
