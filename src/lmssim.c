@@ -477,7 +477,6 @@ int main(int argc, char *argv[])
 		fprintf(stderr, COLOR_RED"usage: %s <Trace file> <param file for SSD> <output file for SSD> <param file for HDD> <output file for HDD>\n"COLOR_RESET, argv[0]);
 		exit(1);
 	}
-	printf("\nSSD_size:%d\n", CACHE_SPACE);
 	int i, j;
 	printf(COLOR_YELLOW"Start Simulation\n"COLOR_RESET);
 	par[1] = argv[1];
@@ -511,14 +510,14 @@ int main(int argc, char *argv[])
 	REQ *tmp;
 	tmp = malloc(sizeof(REQ));
 	
-	char[] buffer = "0 1 12 8 16 1";
+	char buffer[] = "0 0 8 16 0";
 	sscanf(buffer, "%lf%u%u%u%u",
 					&tmp->arrivalTime,
 					&tmp->devno,
 					&tmp->blkno,
 					&tmp->reqSize, 
 					&tmp->reqFlag );
-					
+	//printReq(tmp);			
 	int blockCount;
 	blockCount = tmp->reqSize/SSD_PAGE2SECTOR;	//8
 	for(i=0; i<blockCount; i++)
@@ -528,10 +527,6 @@ int main(int argc, char *argv[])
 			tmp->blkno += SSD_PAGE2SECTOR;
 		}
 		tmp->reqSize = SSD_PAGE2SECTOR;//設定request的size(即為SSD page size) 
-		
-		CACHE *search;
-		search = malloc(sizeof(CACHE));
-		search = searchCache(tmp->blkno);
 
 		//Send_To_HDD
 		#if Send_To_HDD
@@ -552,9 +547,6 @@ int main(int argc, char *argv[])
 			send2ssd = malloc(sizeof(REQ));
 			copyReq(tmp, send2ssd);	
 			unsigned long ssdBlkno;
-			if ( search==NULL )
-				send2ssd->reqFlag=0;
-			// printf("->SSD: no-%u size-%u f-%u", send2ssd->blkno, send2ssd->reqSize, send2ssd->reqFlag);
 
 			// TEST_SSDSIM, 傳送給SSDsim的處理流程
 			//嘗試放進Cache，若Cache未滿，便透過message queue傳送到SSDsim處理
@@ -581,7 +573,6 @@ int main(int argc, char *argv[])
 						printf(COLOR_RED"A request not sent to SSD\n"COLOR_RESET);
 					}  
 				}
-				// printf("SSD Evction\n");
 			}
 		#endif
 	}  

@@ -1,41 +1,4 @@
-# Disksim_lms
-Simple way to control and modify the source code of disksim.
-    
-## Reference
-* http://cighao.com/2016/03/23/disksim-with-ssdmodel-source-analysis-012-write-requests/
-* 孟軒's program
-    
-## Environment
-* Ubuntu 14.04 x86 (!!)
-* 註:
-    安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory，
-    嘗試输入sudo apt-get install gcc-multilib
-    
-## 編譯
-* cd src
-* make clean
-* make
-    
-## 執行
-* sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_output
-* 參數含意
-    * SSD參數: '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' 
-    * HDD參數:　'/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' 
-    * 隨意取: ssd_output, hdd_output
-    
-## 主要修改的地方
-* [lmssim.c](src/lmssim.c)
-程式碼有註解，主要是以下部分
-        
-        lmssim.c:475 看帶入參數對不對
-        lmssim.c:515 輸入disksim資料 
-           //ex. 抵達時間、裝置編號(我忽略)、blkno...
-        lmssim.c:537 Send_To_HDD
-        lmssim.c:550 Send_To_SSD
-        
 
-
-# Disksim
 This directory contains release 4.0 of the DiskSim storage subsystem
 simulator.  Check out the doc directory for he corresponding reference 
 manual that describes the simulator and how to use it.
