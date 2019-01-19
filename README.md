@@ -12,12 +12,12 @@ Simple way to control and modify the source code of disksim.
     嘗試输入sudo apt-get install gcc-multilib
     
 ## 編譯
-* 到/libparam 開啟檔案權限
-    sudo chmod -f 777 *
-* 到/libddbg、/libparam、/diskmodel
+*   到 /libparam 開啟檔案權限
+        sudo chmod -f 777 *
+*   到 /libddbg、/libparam、/diskmodel
     make clean
     make
-* 到/src編譯
+*   到 /src 編譯
     cd src
     make clean
     make
