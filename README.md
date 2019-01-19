@@ -3,7 +3,7 @@ Simple way to control and modify the source code of disksim.
     
 ## Reference
 * http://cighao.com/2016/03/23/disksim-with-ssdmodel-source-analysis-012-write-requests/
-* 孟軒's program (Dis我上傳到實驗室NAS)
+* 孟軒's program (Disksim_lms 我有上傳到實驗室NAS)
 * 編譯環境參考培堯[Accusim-Strace](https://github.com/baconYao/Accusim-Strace/blob/master/README.md)
     
 ## Environment
