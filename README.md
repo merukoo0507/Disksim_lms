@@ -45,7 +45,7 @@ Simple way to control and modify the source code of disksim.
         
 * lmssim.c:477 看帶入參數對不對
 * lmssim.c:513 輸入disksim的一筆資料 `char buffer[] = "0 0 8 16 0";` 
-    //ex. 抵達時間、裝置編號(我忽略)、blkno...
+    * //ex. 抵達時間、裝置編號(我忽略)、blkno...
 * lmssim.c:531 Send_To_HDD
 * lmssim.c:544 Send_To_SSD
         
