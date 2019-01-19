@@ -4,6 +4,7 @@ Simple way to control and modify the source code of disksim.
 ## Reference
 * http://cighao.com/2016/03/23/disksim-with-ssdmodel-source-analysis-012-write-requests/
 * 孟軒's program
+* 編譯環境參考培堯[Accusim-Strace](https://github.com/baconYao/Accusim-Strace/blob/master/README.md)
     
 ## Environment
 * Ubuntu 14.04 x86 (!!)
@@ -15,15 +16,8 @@ Simple way to control and modify the source code of disksim.
 *   到 /libparam 開啟檔案權限
 
         sudo chmod -f 777 *
-*   到 /libddbg、/libparam、/diskmodel
+*   到 /libddbg、/libparam、/diskmodel 編譯
         
-        cd libddbg
-        make clean
-        make
-        cd libparam
-        make clean
-        make
-        cd diskmodel
         make clean
         make
 *   到 /src 編譯
@@ -45,7 +39,7 @@ Simple way to control and modify the source code of disksim.
         
 * lmssim.c:477 看帶入參數對不對
 * lmssim.c:513 輸入disksim的一筆資料 `char buffer[] = "0 0 8 16 0";` 
-    * //ex. 抵達時間、裝置編號(我忽略)、blkno...
+    * //arrival time, device number = 0, block num, request size, read/write
 * lmssim.c:531 Send_To_HDD
 * lmssim.c:544 Send_To_SSD
         
