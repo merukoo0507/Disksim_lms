@@ -35,7 +35,7 @@ Simple way to control and modify the source code of disksim.
     
 ## 主要修改的地方
 * [lmssim.c](src/lmssim.c)
-程式碼有註解，主要是以下部分
+程式碼有註解，可以在以下部分做簡單操作
         
 * lmssim.c:477 看帶入參數對不對
 * lmssim.c:513 輸入disksim的一筆資料 `char buffer[] = "0 0 8 16 0";` 
