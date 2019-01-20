@@ -30,9 +30,10 @@ Simple way to control and modify the source code of disksim.
     * SSD參數: `/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv` 
     * HDD參數:　`/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv`
     * 隨意取: `ssd_output`, `hdd_output`
+```less
+        sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output          '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_output
+```
 
-        sudo ./lmssim '/home/merukoo/Disksim_lms/ssdmodel/valid/Intel_toolkit.parv' ssd_output '/home/merukoo/Disksim_lms/valid/maxtor146g/maxtor146g.parv' hdd_output
-    
 ## 主要修改的地方
 * [lmssim.c](src/lmssim.c)
 程式碼有註解，可以在以下部分做簡單操作
