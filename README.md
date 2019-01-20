@@ -10,7 +10,7 @@ Simple way to control and modify the source code of disksim.
 * Ubuntu 14.04 x86 (!!)
 * 註:
     安裝gcc後，編譯出現錯誤 fatal error: sys/types.h: No such file or directory，
-    嘗試输入sudo apt-get install gcc-multilib
+    嘗試输入`sudo apt-get install gcc-multilib`
     
 ## 編譯
 *   到 /libparam 開啟檔案權限
